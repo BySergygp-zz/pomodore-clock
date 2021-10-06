@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <audio id="alarma" src="./alarma.mp3" preload="auto"></audio>
+    <div class="main" id='main'>
+        <div class="counter timer"></div>
+        <div class="counter min" id='min'></div>
+        <div class="counter pomodoro" id='pomodoro'></div>
+    </div>
+    <div class="form">
+        <input id="number" class="button number" type="number" value="25" min="0" max="30">
+        <button id="submit" class="button start">Start</button>
+    </div>
+    
+    
+</body>
+</html>

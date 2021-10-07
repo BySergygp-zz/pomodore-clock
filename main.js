@@ -86,7 +86,8 @@ restart = ()=> {
     min = initial_min;
     counterMin.className = 'counter';
     counterPom.className = 'counter';
-    counterPom.style.animation = '';
+    counterMin.style.animationPlayState = 'paused';
+    counterPom.style.animationPlayState = 'paused';
     buttonEl.className = 'button start';
     timerEl.innerHTML = min + '\' '  + sec + '\'\'';
     buttonEl.innerHTML = 'Start';

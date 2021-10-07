@@ -60,7 +60,7 @@ setInterval(()=>{
 }, 1000)
 
 setInterval(()=>{
-    document.title = 'Pomodoro '+ min + '\' '  + sec + '\'\'';
+    document.title = 'Pomodoro '+ numMinEl.value + '\' '  + sec + '\'\'';
     if(buttonEl.className == 'button start'){
 	if(numMinEl.value == ''){
 	    numMinEl.value = 0;
@@ -86,8 +86,8 @@ restart = ()=> {
     min = initial_min;
     counterMin.className = 'counter';
     counterPom.className = 'counter';
-    counterPom.style.animation = '';
     counterMin.style.animationPlayState = 'paused';
+    counterPom.style.animation = '';
     counterPom.style.animationPlayState = 'paused';
     buttonEl.className = 'button start';
     timerEl.innerHTML = min + '\' '  + sec + '\'\'';
